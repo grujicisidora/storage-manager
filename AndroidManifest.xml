@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.storagemanager">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StorageManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".UpdateDeviceActivity"
+            android:exported="false"
+            android:label="Update Device"
+            android:parentActivityName=".DeviceManagementActivity"/>
+        <activity
+            android:name=".AddDeviceActivity"
+            android:exported="false"
+            android:label="Add Device"
+            android:parentActivityName=".DeviceManagementActivity" />
+        <activity
+            android:name=".DeviceManagementActivity"
+            android:exported="false"
+            android:label="Devices"
+            android:parentActivityName=".UserNavigationActivity" />
+        <activity
+            android:name=".UpdateConsumableActivity"
+            android:exported="false"
+            android:label="Update Consumable"
+            android:parentActivityName=".ConsumableManagementActivity" />
+        <activity
+            android:name=".AddConsumableActivity"
+            android:exported="false"
+            android:label="Add Consumable"
+            android:parentActivityName=".ConsumableManagementActivity" />
+        <activity
+            android:name=".ConsumableManagementActivity"
+            android:exported="false"
+            android:label="Consumables"
+            android:parentActivityName=".UserNavigationActivity" />
+        <activity
+            android:name=".AddDeviceTypeActivity"
+            android:exported="false"
+            android:label="Add New Device Type"
+            android:parentActivityName=".DeviceTypeManagementActivity" />
+        <activity
+            android:name=".UpdateDeviceTypeActivity"
+            android:exported="false"
+            android:label="Update Device Type"
+            android:parentActivityName=".DeviceTypeManagementActivity" />
+        <activity
+            android:name=".DeviceTypeManagementActivity"
+            android:exported="false"
+            android:label="Device Type Management"
+            android:parentActivityName=".DropdownListsManagementActivity" />
+        <activity
+            android:name=".AddConsumableTypeActivity"
+            android:exported="false"
+            android:label="Add New Consumable Type"
+            android:parentActivityName=".ConsumableTypeManagementActivity" />
+        <activity
+            android:name=".UpdateConsumableTypeActivity"
+            android:exported="false"
+            android:label="Update Consumable Type"
+            android:parentActivityName=".ConsumableTypeManagementActivity" />
+        <activity
+            android:name=".ConsumableTypeManagementActivity"
+            android:exported="false"
+            android:label="Consumable Type Management"
+            android:parentActivityName=".DropdownListsManagementActivity" />
+        <activity
+            android:name=".UpdateStorageLocationActivity"
+            android:exported="false"
+            android:label="Update Storage Room Location"
+            android:parentActivityName=".StorageLocationManagementActivity" />
+        <activity
+            android:name=".AddStorageLocationActivity"
+            android:exported="false"
+            android:label="Add New Storage Room"
+            android:parentActivityName=".StorageLocationManagementActivity" />
+        <activity
+            android:name=".StorageLocationManagementActivity"
+            android:exported="false"
+            android:label="Storage Location Management"
+            android:parentActivityName=".DropdownListsManagementActivity" />
+        <activity
+            android:name=".DropdownListsManagementActivity"
+            android:exported="false"
+            android:label="Admin Center"
+            android:parentActivityName=".AdminNavigationActivity" />
+        <activity
+            android:name=".UserChangePasswordActivity"
+            android:exported="false"
+            android:label="Change Password"
+            android:parentActivityName=".UserNavigationActivity" />
+        <activity
+            android:name=".UserNavigationActivity"
+            android:exported="false"
+            android:label="Storage Manager" />
+        <activity
+            android:name=".ResetUserPasswordActivity"
+            android:exported="false"
+            android:label="Reset Password"
+            android:parentActivityName=".UpdateUserActivity" />
+        <activity
+            android:name=".UpdateUserActivity"
+            android:exported="false"
+            android:label="Update User"
+            android:parentActivityName=".UserManagementActivity" />
+        <activity
+            android:name=".AddUserActivity"
+            android:exported="false"
+            android:label="Add User"
+            android:parentActivityName=".UserManagementActivity" />
+        <activity
+            android:name=".UserManagementActivity"
+            android:exported="false"
+            android:label="User Management"
+            android:parentActivityName=".AdminNavigationActivity" />
+        <activity
+            android:name=".AdminChangePasswordActivity"
+            android:exported="false"
+            android:label="Change Password"
+            android:parentActivityName=".AdminNavigationActivity" />
+        <activity
+            android:name=".AdminNavigationActivity"
+            android:exported="false"
+            android:label="Admin Center" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Storage Manager - Log In">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
